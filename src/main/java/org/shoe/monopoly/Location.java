@@ -17,9 +17,12 @@ public class Location {
         next = location;
     }
 
-    public Location nextBy(int distance) {
+    Location nextBy(int distance) {
         if(distance > 0)
             return next.nextBy(distance - 1);
         return this;
+    }
+
+    public void landOn(Player player) {
     }
 }

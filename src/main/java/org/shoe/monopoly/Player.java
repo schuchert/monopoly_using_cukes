@@ -5,7 +5,6 @@ public class Player {
     public Location current;
 
     public Player(String name, Location startingLocation) {
-
         this.name = name;
         this.current = startingLocation;
     }
@@ -14,5 +13,6 @@ public class Player {
         dice.roll();
         int distance = dice.faceValue();
         current = current.nextBy(distance);
+        current.landOn(this);
     }
 }

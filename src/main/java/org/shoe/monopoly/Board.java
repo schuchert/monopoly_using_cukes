@@ -7,7 +7,6 @@ public class Board {
     private List<Location> locations;
 
     public Board(List<Location> locations) {
-
         this.locations = locations;
     }
 
